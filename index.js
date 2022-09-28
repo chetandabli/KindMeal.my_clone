@@ -51,10 +51,14 @@ heroData = [
 ]
 let mainImage = document.querySelector("#slider");
 let brandLogo = document.querySelector("#slider-logo>img");
+let discount = document.querySelector("discount>p:first-child")
 let i = 1, j = 2;
 setInterval(() => {
     mainImage.style.backgroundImage = `url(${heroData[i]["heroImage"]})`;
     brandLogo.src = `${heroData[i]["brandLogo"]}`;
+    // console.log(`${heroData[i]["discout"]}`)
+    // discount.innerText = `${heroData[i]["discout"]}`;
+    
     document.querySelector(`#slider-bottom>div:nth-child(${j})>img`).style.opacity = "100%";
     if(i == 0){
         document.querySelector(`#slider-bottom>div:last-child>img`).style.opacity = "70%";
