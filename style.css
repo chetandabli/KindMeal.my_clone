@@ -1,0 +1,118 @@
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* **************************** Navbar *************************** */
+
+#nav-top{
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+    margin: 0 93px;
+    margin: auto;
+}
+
+#nav-top >img{
+    width: 360px;
+    height: 80px;
+    margin: auto;
+    margin-left: 0;
+}
+
+#nav-top > div:nth-child(2){
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#nav-top > div > div{
+    display: flex;
+    width: 220px;
+    height: 44px;
+}
+
+#nav-top > div > div >img{
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+#nav-top>:last-child{
+    width: 310px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-top>:last-child>div{
+    width: 310px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+#nav-top>:last-child>div p{
+    text-align: center;
+}
+#nav-top>:last-child>div p:first-child{
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 12px 5px 10px;
+}
+#nav-top>:last-child>div p:nth-child(2){
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    background-color: #35619f;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    margin-right: 12px;
+    color: white;
+}
+#nav-top>:last-child>div p:nth-child(3){
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    background-color: #666666;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 25px 5px 25px;
+    margin-right: 8px;
+    color: white;
+}
+#nav-top>:last-child>div p:last-child{
+    font-size: 12px;
+    margin: 0;
+    border-left: 1px solid #cccccc;
+    padding: 7px 1px 7px 5px;
+}
+
+#nav-bottom{
+    width: 100%;
+    background-color: #2bb673;
+    height: 40px;
+
+}
+#nav-bottom > div{
+    width: 1100px;
+    font-size: 18px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bottom > div>p{
+    color: white;
+    margin: auto;
+    padding: 9.5px 25px;
+}
+#nav-bottom > div>p:first-child{
+    background-color: #229760;
+    margin-left: 0;
+    
+}
