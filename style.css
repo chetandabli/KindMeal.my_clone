@@ -116,3 +116,88 @@ body{
     margin-left: 0;
     
 }
+/* ********************** slider ************************* */
+
+#main-slider{
+    width: 1100px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-top: 0px;
+    color: #333333;
+    box-shadow: 0px 0px 6px #e0e0e0;
+    font-size: 14px;
+}
+#slider-top{
+    display: flex;
+}
+#slider{
+    background: url("https://www.kindmeal.my/photos/deal/6/670-4180-m.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 70%;
+    height: 350px;
+}
+#slider >img{
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+#discount{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border: 0px solid red;
+    border-radius: 50%;
+    opacity: 80%;
+
+}
+#tagline{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: #0000009d;
+}
+#tagline>p{
+    color: white;
+    margin: 12px;
+}
+#tagline>p>span{
+    font-size: 16px;
+    color: rgb(226, 226, 226);
+    margin: 12px;
+}
+#discount>p:first-child{
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 12px;
+
+}
+#discount>p:last-child{
+    margin-top: 0;
+
+}
+#slider-logo>img{
+    width: 350px;
+}
+#slider-bottom{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    margin: 20px;
+    height: 95px;
+}
+#slider-bottom>div>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
