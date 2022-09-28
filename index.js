@@ -49,3 +49,28 @@ heroData = [
         brandLogo: "https://www.kindmeal.my/photos/shop/5/567-4252-m.jpg",
     },
 ]
+let mainImage = document.querySelector("#slider");
+let brandLogo = document.querySelector("#slider-logo>img");
+let i = 1, j = 2;
+setInterval(() => {
+    mainImage.style.backgroundImage = `url(${heroData[i]["heroImage"]})`;
+    brandLogo.src = `${heroData[i]["brandLogo"]}`;
+    document.querySelector(`#slider-bottom>div:nth-child(${j})>img`).style.opacity = "100%";
+    if(i == 0){
+        document.querySelector(`#slider-bottom>div:last-child>img`).style.opacity = "70%";
+    }
+    i++
+    j++
+    if(i == heroData.length){
+        i=0
+        document.querySelector(`#slider-bottom>div:nth-child(${j-1})>img`).style.opacity = "100%";
+        document.querySelector(`#slider-bottom>div:nth-child(${j-2})>img`).style.opacity = "70%";
+        j = 1;
+
+    }else{
+        document.querySelector(`#slider-bottom>div:nth-child(${j-2})>img`).style.opacity = "70%";
+    }
+
+    
+    
+},5000)
