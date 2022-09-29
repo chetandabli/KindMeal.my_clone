@@ -464,7 +464,7 @@ body{
     font-size: 10px;
     margin: 3px;
 }
-/* ******************** deals page *********************** */
+/* ******************** deals page top *********************** */
 .deals{
     background-image: url(https://www.kindmeal.my/photos/shop/6/626-c.jpg);
     background-repeat: no-repeat;
@@ -482,7 +482,6 @@ body>.deals{
     margin: auto;
     height: 400px;
     min-height: 325px;
-    border: 1px solid red;
     position: relative;
 }
 .logo-menu-deals{
@@ -543,7 +542,201 @@ box-shadow: inset -1px -15px 10px 1px rgba(255,255,255,1);
     width: 25%;
 }
 
+/* ************ deal page discription *************** */
 
+.product{
+    width: 1100px;
+    margin: auto;
+}
+.product-heading>h2{
+    text-align: center;
+    font-size: 28px;
+    color: rgb(31, 31, 31);
+    font-weight: 300;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    border: 0px solid gray;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-box-shadow: -2px -1px 10px -1px rgba(153,153,153,1);
+-moz-box-shadow: -2px -1px 10px -1px rgba(153,153,153,1);
+box-shadow: -2px -1px 10px -1px rgba(153,153,153,1);
+background-color: #f5f5f5;
+}
+
+.product-image-buy{
+    display: flex;
+    margin-top: 0; 
+    box-shadow: 0px 0px 6px #e0e0e0;
+
+}
+.product-image-buy>div:first-child{
+    width: 50%;
+    position: relative;
+    -webkit-box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
+-moz-box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
+box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
+}
+.product-image-buy>div:first-child>img{
+    z-index: -5;
+    position: relative;
+    width: 100%;
+}
+.product-image-buy>div:first-child>p{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #00000080;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 20px;
+    color: white;
+}
+.buy-now{
+    border-bottom: 1px solid gray;
+}
+.buy-now>:first-child{
+    width: 550px;
+    display: flex;
+    height: 45%;
+    align-items: center;
+    justify-content: center;
+
+}
+.buy-now>:first-child>:first-child{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+}
+.buy-now>:first-child>:last-child{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+.buy-now>:first-child>:first-child>:first-child{
+    font-size: 14px;
+    padding-top: 30px;
+}
+.buy-now>:first-child>:first-child>:nth-child(2){
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+
+}
+.buy-now>:first-child>:first-child>:last-child{
+    font-size: 14px;
+    margin-top: 3px;
+    color: gray;
+}
+.buy-now>:first-child>:last-child>:first-child{
+    font-size: 14px;
+    padding-top: 30px; 
+}
+.buy-now>:first-child>:last-child>:last-child{
+    font-size: 40px;
+    color: #05c85f;
+    padding: 0;
+    margin: 0;
+}
+.buy-now>:last-child{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.buy-now>:last-child>:first-child{
+    font-size: 12px;
+    color: #000000;
+    font-weight: 600;
+}
+.buy-now>:last-child>:nth-child(2){
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+    background-color: #2d96ff;
+    width: 55%;
+    margin: auto;
+    padding: 12px 0px 12px 12px;
+    border: 0px solid red;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.buy-now>:last-child>:nth-child(3){
+    font-size: 12px;
+    margin: auto;
+    margin-top: 15px;
+}
+.buy-now>:last-child>:nth-child(3)>span{
+    color: #2184ff;
+    text-decoration: underline dotted;
+    margin: 0 4px;
+}
+.buy-now>:last-child>:nth-child(3)>span:hover{
+    cursor: pointer;
+}
+
+/* ************ product page real discription ******************* */
+
+.product-discription{
+    display: flex;
+    padding: 30px 0;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0px 0px 6px #e0e0e0;
+}
+.product-discription>:first-child{
+    width: 45%;
+    padding-left: 30px;
+}
+.product-discription>:last-child{
+    width: 45%;
+    padding-right: 30px;
+}
+
+.product-imges{
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 6px #e0e0e0;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: white;
+    background-color: #f5f5f5;
+    
+}
+.product-imges>div{
+    padding: 25px 0;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+.product-imges>div>div{
+    height: 160px;
+    width: 180px;
+    background-image: url(https://www.kindmeal.my/photos/deal/7/724-5197-s.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ads-banner{
+    width: 1100px;
+    margin: auto;
+    box-shadow: 0px 0px 6px #e0e0e0;
+    margin-bottom: 50px;
+}
 
 
 
