@@ -548,9 +548,6 @@ box-shadow: inset -1px -15px 10px 1px rgba(255,255,255,1);
     width: 1100px;
     margin: auto;
 }
-.product-heading{
-    
-}
 .product-heading>h2{
     text-align: center;
     font-size: 28px;
@@ -570,6 +567,7 @@ background-color: #f5f5f5;
 .product-image-buy{
     display: flex;
     margin-top: 0; 
+    box-shadow: 0px 0px 6px #e0e0e0;
 
 }
 .product-image-buy>div:first-child{
@@ -597,7 +595,7 @@ box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
     color: white;
 }
 .buy-now{
-    
+    border-bottom: 1px solid gray;
 }
 .buy-now>:first-child{
     width: 550px;
@@ -652,7 +650,7 @@ box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
     text-align: center;
     align-items: center;
     justify-content: center;
-    
+    padding-top: 30px;
 }
 
 .buy-now>:last-child>:first-child{
@@ -686,7 +684,59 @@ box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
     cursor: pointer;
 }
 
+/* ************ product page real discription ******************* */
 
+.product-discription{
+    display: flex;
+    padding: 30px 0;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0px 0px 6px #e0e0e0;
+}
+.product-discription>:first-child{
+    width: 45%;
+    padding-left: 30px;
+}
+.product-discription>:last-child{
+    width: 45%;
+    padding-right: 30px;
+}
+
+.product-imges{
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 6px #e0e0e0;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: white;
+    background-color: #f5f5f5;
+    
+}
+.product-imges>div{
+    padding: 25px 0;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+.product-imges>div>div{
+    height: 160px;
+    width: 180px;
+    background-image: url(https://www.kindmeal.my/photos/deal/7/724-5197-s.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ads-banner{
+    width: 1100px;
+    margin: auto;
+    box-shadow: 0px 0px 6px #e0e0e0;
+    margin-bottom: 50px;
+}
 
 
 
