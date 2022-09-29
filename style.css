@@ -228,8 +228,8 @@ body{
 }
 .box-top{
     display: flex;
-    margin: 10px;
-    margin-bottom: 0px;
+    margin: 0 15px;
+    margin-top: 10px;
 }
 .box-top>div:first-child{
     display: flex;
@@ -272,6 +272,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 0px;
+    margin: 0 5px;
 }
 .box>div{
     text-align: center;
@@ -296,4 +297,105 @@ body{
     border-radius: 4px;
 }
 
+/* ***************** join now section ********************** */
+#join-now-section{
+    width: 1100px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+#join-now-section> h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(107, 106, 106);
+}
+.petfinder{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+.petfinder>p{
+    width: 40%;
+    font-size: 20px;
+    color: gray;
+}
+.petfinder>img{
+    width: 60%;
+}
+#join-now-section> h3{
+    font-size: 26px;
+    margin: 40px 0 20px 0;
+    font-weight: 500;
+    color: gray;
+}
+.join-now-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 0 15px;
+    margin-top: 70px;
+}
+.join-now-box>div{
+    border: 1px solid gray;
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #cccccc;
+}
+.join-now-box>div>h5{
+    margin: 15px 0 0 0;
+    color: rgba(110, 110, 110, 0.829);
+    font-weight: 500;
+    font-size: 22px;
+}
+.join-now-box>div>p{
+    color: gray;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#join-now-section>p{
+    width: 95%;
+    font-size: 20px;
+    margin: auto;
+    color: gray;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    line-height:28px;
+}
+.join-now-button{
+    width: 40%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    border: 0px solid red;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    margin-bottom: 70px;
+}
+.join-now-button>p:first-child{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;  
+}
+.join-now-button>p:last-child{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;  
+}
+#join-now-section>img{
+    margin-bottom: 0;
+}
+
+.buttom-save{
+    background-color: rgba(128, 128, 128, 0.192);
+}
+.save-section{
+    width: 1100px;
+    margin: auto;
+}
 
