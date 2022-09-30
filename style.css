@@ -26,7 +26,7 @@ body{
     margin: auto;
 }
 
-#nav-top >img{
+#nav-top >a>img{
     width: 360px;
     height: 80px;
     margin: auto;
@@ -189,11 +189,10 @@ body{
     color: rgb(226, 226, 226);
     margin: 12px;
 }
-#discount>p:first-child{
+#discount>:first-child{
     font-size: 25px;
     margin-bottom: 0;
     margin-top: 12px;
-
 }
 #discount>p:last-child{
     margin-top: 0;
@@ -201,12 +200,11 @@ body{
 }
 #slider-logo{
     width: 350px;
-    
-}
-#slider-logo>img{
-    width: 100%;
-    height: 100%;
-    transition: 1s linear;
+    background-image: url("https://www.kindmeal.my/photos/shop/5/552-4075-m.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 1s linear;
     
 }
 #slider-bottom{
@@ -737,79 +735,3 @@ box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
     box-shadow: 0px 0px 6px #e0e0e0;
     margin-bottom: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .deal-menu{
-    width: 1040px;
-    margin: auto;
-
-}
-.deal-menu>div{
-    width: 1040px;
-    position: absolute;
-    bottom: -30px;
-    display: flex;
-}
-.deal-menu-bar{
-    position: relative;
-}
-.deal-menu-bar>div{
-    position: absolute;
-    bottom: 0;
-}
-.deal-menu-bar>div>:nth-child(2){
-    display: flex;
-    justify-content: space-between;
-
-}
-.deal-menu-bar>div>div>{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-.deal-menu-bar>div>div>h3{
-    display: block;
-}
-.deal-menu>div>img{
-    width: 200px;
-    height: 200px;
-} */
