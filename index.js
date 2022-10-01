@@ -1,3 +1,60 @@
+// ******************* pop box function ************************
+
+
+function pop(){
+    // let popbody = document.querySelector("#pop-up-js");
+    console.log("helow");
+    // popbody.classList.remove("pop-up");
+    document.querySelector("#blur-js").classList.toggle("blur");
+    let popBox = document.querySelector("#pop-box-js")   
+        popBox.classList.toggle('active');
+}
+function unpop(){
+    // let popbody = document.querySelector("#pop-up-js");
+    console.log("helow");
+    // popbody.classList.remove("pop-up");
+    document.querySelector("#blur-js").classList.toggle("blur");
+    let popBox = document.querySelector("#pop-box-js")   
+        popBox.classList.toggle('active');
+}
+
+
+let signupbutton = document.querySelector(".pop-sign-button");
+signupbutton.addEventListener("click", signup)
+function signup(){
+    location.href = "/signup.html";
+}
+let signupbutton2 = document.querySelector(".pop-sign-button2");
+signupbutton2.addEventListener("click", signup)
+function signup(){
+    location.href = "/signup.html";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ****************** slider function *******************************
+
 heroData = [
     {
         discout: "15%",
@@ -77,7 +134,4 @@ setInterval(() => {
     }else{
         document.querySelector(`#slider-bottom>div:nth-child(${j-2})>img`).style.opacity = "70%";
     }
-
-    
-    
 },3000)
