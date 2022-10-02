@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div id="loginbuttons">
                         <p onClick="poplogin()">Login</p>
                         <p onClick="poplogin()">Facebook</p>
                         <p onClick="poplogin()">Email</p>
@@ -88,7 +88,7 @@
                         </div>
                         <div>
                             <p>No pre-payment or booking needed. Get coupon & dine instantly!</p>
-                            <p> Get FREE Coupon
+                            <p onclick="newFun()"> Get FREE Coupon
                             </p>
                             <p>Grab this KindMeal Coupon now to enjoy 10% off! <span>How it works</span></p>
                         </div>
@@ -342,7 +342,36 @@
             <a href="signup.html">Not a member? Sign up FREE!</a>
         </div>
     </div> 
+    <div class="deal-pop" id="deal-pop-js">
+        <div class="sign-done">
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_tick.png" alt="">
+                <h2>Coupon Successfully Received</h2>
+            </div>
+            <button onclick="unpopdeal()">Close Window</button>
+        </div>
+    </div> 
 </body>
 <script src="/index.js"></script>
+<script>
+    let statuslogin = localStorage.getItem("logged");
+let nameoflogged = localStorage.getItem("loggedName");
+if(statuslogin == "Yes"){
+    // document.querySelector("#loginbuttons").innerHTML = "";
+    document.querySelector("#loginbuttons").innerHTML = `<table>
+    <tbody>
+        <tr>
+            <td id="cartcount">0</td>
+            <td id="namelo">
+                <p id="pp">${nameoflogged} ▼</p>
+            </td>
+            <td id="logimg">
+                <img src="https://www.kindmeal.my/images/no_photo_header.png" alt="">
+            </td>
+        </tr>
+    </tbody>
+</table>`
+}
+</script>
 
 </html>

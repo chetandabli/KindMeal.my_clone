@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div id="loginbuttons">
                         <p onClick="poplogin()">Login</p>
                         <p onClick="poplogin()">Facebook</p>
                         <p onClick="poplogin()">Email</p>
@@ -384,7 +384,7 @@
             </div>
         </div>
         <div class="pop-login-forget">
-            <a href="#">Member Login</a>
+            <a onclick="poplogin()" href="#">Member Login</a>
             <a href="#">Forget Password?</a>
         </div>
     </div>
@@ -396,9 +396,9 @@
             <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
         </div>
         <h3>Member Login</h3>
-        <form>
-            <input type="email" name="login-email" id="login-email" placeholder="Your Email">
-            <input type="password" name="login-password" id="login-password" placeholder="Your Password">
+        <form id="form_login">
+            <input type="email" name="login-email" id="loginEmail" placeholder="Your Email">
+            <input type="password" name="login-password" id="loginPassword" placeholder="Your Password">
             <input type="submit" name="login-submit" id="login-submit" value="Login">
         </form>
         <div id="brline"></div>

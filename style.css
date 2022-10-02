@@ -16,7 +16,27 @@ body{
   );
     padding-bottom: 20px;
 }
-
+#cartcount{
+    font-size: 14px;
+    color: rgb(94, 93, 93);
+    width: 40px;
+    background-image: url(https://www.kindmeal.my/images/icon_notice.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: none;
+}
+#namelo #pp{
+    font-size: 16px;
+    width: 145px;
+    margin: 0 20px;
+    border: none;
+    color: rgb(94, 93, 93);
+}
+#logimg{
+    padding: 1px 3px;
+    border: .5px solid rgb(192, 190, 190);
+}
 /* *************************** pop up *************************** */
 .blur-not{
     width: 100%;
@@ -215,6 +235,32 @@ body{
     width: 45px;
     height: 45px;
 }
+/* ******************* deal pop **********************/
+.deal-pop{
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: 540px;
+    transition: 0.6s;
+}
+.deal-pop#deal-pop-js.activedeal{
+    opacity: 1;
+    transition: 1s;
+    visibility: visible;
+}
+.login-pop>h2{
+    color: rgb(41, 38, 38);
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 25;
+    font-weight: 500;
+}
 /* **************************** Navbar *************************** */
 
 #nav-top{
@@ -331,6 +377,7 @@ body{
     color: white;
     margin: auto;
     padding: 9.5px 25px;
+    cursor: pointer;
 }
 #nav-bottom > div>p:first-child{
     background-color: #229760;
@@ -596,6 +643,7 @@ body{
     background-color: red;
     color: white;
     margin-bottom: 70px;
+    cursor: pointer;
 }
 .join-now-button>p:first-child{
     font-size: 40px;
@@ -879,6 +927,7 @@ box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
     border: 0px solid red;
     border-radius: 10px;
     margin-top: 25px;
+    cursor: pointer;
 }
 .buy-now>:last-child>:nth-child(3){
     font-size: 12px;
