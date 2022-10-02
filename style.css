@@ -51,7 +51,6 @@ body{
     transition: 1s;
     visibility: visible;
 }
-
 .pop-close-button{
     width: 100%;
     display: flex;
@@ -133,6 +132,89 @@ body{
 .pop-login-forget>a:hover{
     text-decoration: underline;
 }
+
+/* ********************* pop login box ******************** */
+.login-pop{
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: 540px;
+    transition: 0.6s;
+}
+.login-pop#login-pop-js.activelogin{
+    opacity: 1;
+    transition: 1s;
+    visibility: visible;
+}
+.login-pop>h3{
+    color: rgb(105, 102, 102);
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.login-pop>form>input{
+    display: block;
+    font-size: 16px;
+    width: 330px;
+    padding: 10px 15px;
+    margin: auto;
+    margin-bottom: 11px; 
+    border: .5px solid rgb(192, 190, 190);
+    border-radius: 7px;
+}
+.login-pop>form>input:last-child{
+    display: block;
+    width: 220px;
+    padding: 12px 25px;
+    margin: 25px auto 25px auto; 
+    border: none;
+    border-radius: 7px;
+    background-color: #04be5a;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.login-pop>form>input:last-child:hover{
+    background-color: #009c49;
+}
+#brline{
+    height: 1px;
+    width: 90%;
+    background-color: rgb(192, 190, 190);
+    margin: auto;
+    border: 1 solid rgb(192, 190, 190);
+}
+#fbbutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 275px;
+    padding: 3px 10px 3px 3px;
+    height: 45px;
+    margin: 25px auto 25px auto; 
+    border: none;
+    border-radius: 7px;
+    background-color: #3b5998;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+#fbbutton:hover{
+    background-color: #1e3c7e;
+}
+#fbbutton>img{
+    width: 45px;
+    height: 45px;
+}
 /* **************************** Navbar *************************** */
 
 #nav-top{
@@ -148,6 +230,7 @@ body{
     height: 80px;
     margin: auto;
     margin-left: 0;
+    margin-top: 7px;
 }
 
 #nav-top > div:nth-child(2){
@@ -166,7 +249,7 @@ body{
 #nav-top > div > div >img{
     width: 40px;
     height: 40px;
-    margin: 0 5px;
+    margin: 0 8px;
 }
 
 #nav-top>:last-child{
@@ -190,9 +273,10 @@ body{
     font-size: 12px;
     margin: 0;
     padding: 5px 12px 5px 10px;
+    cursor: pointer;
 }
 #nav-top>:last-child>div p:nth-child(2){
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     margin: 0;
     background-color: #35619f;
@@ -201,9 +285,13 @@ body{
     padding: 5px 15px 5px 15px;
     margin-right: 12px;
     color: white;
+    cursor: pointer;
+}
+#nav-top>:last-child>div p:nth-child(2):hover{
+    background-color: #1b4683; 
 }
 #nav-top>:last-child>div p:nth-child(3){
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     margin: 0;
     background-color: #666666;
@@ -212,6 +300,10 @@ body{
     padding: 5px 25px 5px 25px;
     margin-right: 8px;
     color: white;
+    cursor: pointer;
+}
+#nav-top>:last-child>div p:nth-child(3):hover{
+    background-color: #3f3e3e;
 }
 #nav-top>:last-child>div p:last-child{
     font-size: 12px;

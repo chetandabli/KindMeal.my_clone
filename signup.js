@@ -23,7 +23,18 @@ signupbutton2.addEventListener("click", signup)
 function signup(){
     location.href = "/signup.html";
 }
+// *************************** pop login *********************************
 
+function poplogin(){
+    document.querySelector("#blur-js").classList.toggle("blur");
+    let loginPop = document.querySelector("#login-pop-js")   
+    loginPop.classList.toggle('activelogin');
+}
+function unpoplogin(){
+    document.querySelector("#blur-js").classList.toggle("blur");
+    let loginPop = document.querySelector("#login-pop-js")   
+    loginPop.classList.toggle('activelogin');
+}
 
 // **************************  signup data  ***************************
 let signupdetails = JSON.parse(localStorage.getItem("signupData")) || [];
