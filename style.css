@@ -907,6 +907,7 @@ box-shadow: inset -2px -1px 68px -1px rgba(31,31,31,1);
 }
 .signup-left>div:last-child{
     cursor: auto;
+    margin-bottom: 50px;
 }
 .signup-right{
     margin-left: 10px;
@@ -992,14 +993,75 @@ table tr>:first-child{
 }
 
 .submit{
-    padding: 15px 60px;
+    padding: 12px 50px;
     font-size: 20px;
-    background-color: #05c85f;
+    background-color: #f53838;
     border: none;
     border-radius: 10px;
     margin-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
+    color: white;
+    font-weight: 600;
 }
 input{
     outline: none;
+}
+#tandc>span>a{
+    text-decoration: none;
+    color: rgb(100, 97, 97);
+}
+#tandc>span>a:hover{
+    text-decoration:underline;
+}
+#tandc{
+    color: rgb(100, 97, 97);
+}
+#username{
+    color: #2184ff;
+}
+#username>span{
+    font-weight: 700;
+    color: #2184ff;
+}
+
+
+/* *************** signup done page ****************** */
+.sign-done{
+    margin-left: 80px;
+}
+.sign-done>div{
+    display: flex;
+    align-items: center;
+}
+.sign-done>p{
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+}
+.sign-done>p:last-child{
+    background-color: #f53838;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    width: 250px;
+    border-radius: 7.5px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+.sign-done>p:last-child:hover{
+    background-color: #c90000;
+}
+.sign-done>div>img{
+    width: 80px;
+    margin: 40px 50px 20px 0;
+}
+.sign-done>div>h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(46, 44, 44);
+}
+#signup-done-email{
+    font-weight: 600;
+    color: rgb(104, 103, 103);
 }
