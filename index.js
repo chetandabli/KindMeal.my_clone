@@ -31,28 +31,6 @@ function signup(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ****************** slider function *******************************
 
 heroData = [
@@ -110,15 +88,14 @@ let mainImage = document.querySelector("#slider");
 let brandLogo = document.querySelector("#slider-logo");
 let discount = document.querySelector("#discount>:first-child")
 let tagline = document.querySelector("#tagline>p")
-let tagLineSpan = document.querySelector("#tagline>p>span")
+let taglineSpan = document.querySelector("#spanoftagline")
 let i = 1, j = 2;
 setInterval(() => {
     mainImage.style.backgroundImage = `url(${heroData[i]["heroImage"]})`;
     brandLogo.style.backgroundImage = `url(${heroData[i]["brandLogo"]})`;
     // console.log(`${heroData[i]["discout"]}`)
     discount.innerText = heroData[i]["discout"];
-    tagline.innerText = heroData[i]["tagLine"];
-    tagLineSpan.innerText = heroData[i]["tabLineSpan"];
+    tagline.innerHTML = `${heroData[i]["tagLine"]} <span> ${heroData[i]["tabLineSpan"]}</span>`;
     document.querySelector(`#slider-bottom>div:nth-child(${j})>img`).style.opacity = "100%";
     if(i == 0){
         document.querySelector(`#slider-bottom>div:last-child>img`).style.opacity = "70%";
@@ -135,3 +112,10 @@ setInterval(() => {
         document.querySelector(`#slider-bottom>div:nth-child(${j-2})>img`).style.opacity = "70%";
     }
 },3000)
+
+let redirectToDeal = document.querySelector("#hero");
+redirectToDeal.addEventListener("click", redirect)
+
+function redirect(){
+    location.href = "/deal-1.html";
+}
