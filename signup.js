@@ -36,6 +36,7 @@ function unpoplogin(){
     loginPop.classList.toggle('activelogin');
 }
 
+
 // **************************  signup data  ***************************
 let signupdetails = JSON.parse(localStorage.getItem("signupData")) || [];
 let sub = document.querySelector("form"); 
@@ -58,6 +59,13 @@ function signUpFun(event){
         }
         if(sub.password.value.length < 8){
             alert("Password min. Length is 8")
+        }
+        if(sub.usernameBox.value.length != 0){
+            for(let i = 0; i < sub.usernameBox.value.length; i++){
+                if(sub.usernameBox.value[i] == " "){
+                    alert("Username can't have space!")
+                }
+            }
         }
         if(sub.password.value.length > 7){
             let count = 0, num = 0, lowercount = 0, uppercount = 0;
@@ -82,38 +90,89 @@ function signUpFun(event){
             }
             if(count == 0 || num == 0 || lowercount == 0 || uppercount == 0){
                 alert("Please enter strong password. combination of lowercase, uppercase, number and spacial character")
-            }
-        }
-        if(sub.usernameBox.value.length != 0){
-            for(let i = 0; i < sub.usernameBox.value.length; i++){
-                if(sub.usernameBox.value[i] == " "){
-                    alert("Username can't have space!")
+            }else{
+                if(sub.checkbox.checked == false){
+                    alert("Please Accept Term and Condition")
+                }else{
+                    let obj = {
+                        firstName: sub.firstName.value,
+                        lastName: sub.lastName.value,
+                        email: sub.email.value,
+                        emailRe: sub.emailre.value,
+                        pass: sub.password.value,
+                        username: sub.usernameBox.value,
+                        DOB: sub.dateofbirth.value,
+                        counrey: sub.country.value,
+                        state: sub.state.value,
+                        photo: sub.photo.value,
+                    }
+                    signupdetails.push(obj)
+                    localStorage.setItem("signupData", JSON.stringify(signupdetails))
+                    location.href = "/signup_done.html";
                 }
             }
         }
+        
 
-
-
-        if(sub.checkbox.checked == false){
-            alert("Please Accept Term and Condition")
-        }else{
-            let obj = {
-                firstName: sub.firstName.value,
-                lastName: sub.lastName.value,
-                email: sub.email.value,
-                emailRe: sub.emailre.value,
-                pass: sub.password.value,
-                username: sub.usernameBox.value,
-                DOB: sub.dateofbirth.value,
-                counrey: sub.country.value,
-                state: sub.state.value,
-                photo: sub.photo.value,
-            }
-            signupdetails.push(obj)
-            localStorage.setItem("signupData", JSON.stringify(signupdetails))
-            location.href = "/signup_done.html";
-        }
+            
     }
     
     
+}
+
+// ****************** login **************************************
+let login = document.querySelector("#form_login"); 
+login.addEventListener("submit", loginFun);
+
+function loginFun(event){
+    event.preventDefault();
+    for(let i = 0; i < signupdetails.length; i++){
+        if(signupdetails[i]["email"] == login.loginEmail.value){
+            if(signupdetails[i]["pass"] == login.loginPassword.value){
+                alert("Your Are Logged in")
+                let temp = signupdetails[i]["firstName"] + " " + signupdetails[i]["lastName"]
+                localStorage.setItem("logged", "Yes")
+                localStorage.setItem("loggedName", temp)
+                location.href = "/index.html";
+            }else if(i == (signupdetails.length-1)){
+                alert("You Entered Incorrect Password")
+            }
+        }else if(i == (signupdetails.length-1)){
+            alert("You Entered Incorrect Email and Password")
+        }
+    }
+}
+let statuslogin = localStorage.getItem("logged");
+let nameoflogged = localStorage.getItem("loggedName");
+if(statuslogin == "Yes"){
+    // document.querySelector("#loginbuttons").innerHTML = "";
+    document.querySelector("#loginbuttons").innerHTML = `<table>
+    <tbody>
+        <tr>
+            <td id="cartcount">0</td>
+            <td id="namelo">
+                <p id="pp">${nameoflogged} ▼</p>
+            </td>
+            <td id="logimg">
+                <img src="https://www.kindmeal.my/images/no_photo_header.png" alt="">
+            </td>
+        </tr>
+    </tbody>
+</table>`
+    // let td1 = document.createElement("td")
+    // td1 = 0;
+
+    // let td2 = document.createElement("td")
+    // let nameof = document.createElement("p")
+    // nameof.innerText = nameoflogged + " ▼"
+    // let img = document.createElement("img")
+    // img.src = "https://www.kindmeal.my/images/no_photo_header.png"
+    // td2.append(nameof , img)
+
+    // let tr = document.createElement("tr")
+    // tr.append(td1, td2)
+    // let table = document.createElement("table")
+    // table.append(tr)
+    // loggedtable = table;
+
 }
