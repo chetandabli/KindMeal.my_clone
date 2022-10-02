@@ -5,6 +5,4 @@ this is clone of Kindmeal.my
 
 clone link:- https://beamish-salamander-14c16f.netlify.app/
 
-
-used
-HTML,CSS,JS
+used pure HTML, CSS, JavaScript
