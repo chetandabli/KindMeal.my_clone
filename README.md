@@ -22,6 +22,17 @@ Hello everyone, this is a Readme for my construct week project that has been com
     b.CSS (styling)
 
     c.Javascript (functionality)
+    
+# Features
+
+    -Home page
+    -Navbar
+    -Slider on Homepage
+    -Signup | Login (in pop up on every page)
+    -User can see restaurants in product Page and avail the coupon 
+    -User have to Login first for availing coupon
+    -User have to create account before login
+    -On availing the coupon user will get a unique coupon code
 
 Glimpse and Screenshots of my cloned website:
 
