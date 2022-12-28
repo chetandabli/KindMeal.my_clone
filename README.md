@@ -4,6 +4,8 @@ Hello everyone, this is a Readme for my construct week project that has been com
 
 ### live link: https://beamish-salamander-14c16f.netlify.app/
 
+##### blog link: https://medium.com/@chetandabli/kindmeal-my-clone-solo-project-e357999ea94d
+
 <img src="https://www.kindmeal.my/images/logo-kindmeal.png">
 
 ## Installing and Running
