@@ -1,10 +1,7 @@
-import {poplogin, checklogin} from './navbar.js'
-import {footer} from "../components/footer.js";
-import {navbar} from "../components/navbar.js";
+import {poplogin} from './navbar.js'
 
 document.getElementById("bottom-menu").innerHTML = footer()
 document.getElementById("navbar").innerHTML = navbar();
-checklogin()
 
 document.getElementById("newFun").addEventListener("click", newFun)
 
