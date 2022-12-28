@@ -26,9 +26,9 @@ Hello everyone, this is a Readme for my construct week project that has been com
 # Features
 
     -Home page
-    -Navbar
+    -Navbar and Footer
     -Slider on Homepage
-    -Signup | Login (in pop up on every page)
+    -Signup | Login
     -User can see restaurants in product Page and avail the coupon 
     -User have to Login first for availing coupon
     -User have to create account before login
