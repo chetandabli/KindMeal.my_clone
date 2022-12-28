@@ -58,7 +58,7 @@ Glimpse and Screenshots of my cloned website:
 
 <img src="https://miro.medium.com/max/720/1*BCLNQYNw_ll7_Y6nQwsKlQ.webp">
 
-## 🅓Login and Signup:
+## 🅓 Login and Signup:
 
 - Here we have a Modal Function on the Navbar when users click on signup or login they get a popup on the screen.
 - If the user is registered with the website, only then he/she can log in with their respective email id & password. After successful login, the user is redirected to his/her home page. Visible user name in user navbar section after login.
