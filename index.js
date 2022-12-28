@@ -84,7 +84,6 @@ let i = 1, j = 2;
 setInterval(() => {
     mainImage.style.backgroundImage = `url(${heroData[i]["heroImage"]})`;
     brandLogo.style.backgroundImage = `url(${heroData[i]["brandLogo"]})`;
-    // console.log(`${heroData[i]["discout"]}`)
     discount.innerText = heroData[i]["discout"];
     tagline.innerHTML = `${heroData[i]["tagLine"]} <span> ${heroData[i]["tabLineSpan"]}</span>`;
     document.querySelector(`#slider-bottom>div:nth-child(${j})>img`).style.opacity = "100%";
