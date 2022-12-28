@@ -8,7 +8,6 @@ document.getElementById("navbar").innerHTML = navbar()
 document.getElementById("pop").addEventListener("click", pop);
 function pop(){
     // let popbody = document.querySelector("#pop-up-js");
-    console.log("helow");
     // popbody.classList.remove("pop-up");
     document.querySelector("#blur-js").classList.toggle("blur");
     let popBox = document.querySelector("#pop-box-js")   
@@ -17,7 +16,6 @@ function pop(){
 document.getElementById("unpop").addEventListener("click", unpop);
 function unpop(){
     // let popbody = document.querySelector("#pop-up-js");
-    console.log("helow");
     // popbody.classList.remove("pop-up");
     document.querySelector("#blur-js").classList.toggle("blur");
     let popBox = document.querySelector("#pop-box-js")   
@@ -61,7 +59,6 @@ function loginFun(event){
         alert("please create account first!")
     }
     for(let i = 0; i < loginDetails.length; i++){
-        console.log("fuck")
         if(loginDetails[i]["email"] == login.loginEmail.value){
             if(loginDetails[i]["pass"] == login.loginPassword.value){
                 alert("Your Are Logged in")
@@ -82,7 +79,6 @@ function checklogin(){
     let statuslogin = localStorage.getItem("logged");
 let nameoflogged = localStorage.getItem("loggedName");
 if(statuslogin == "Yes"){
-    console.log("true")
     document.getElementById("loginbuttons").innerHTML = "";
     document.getElementById("loginbuttons").innerHTML = `<table>
     <tbody>

@@ -1,8 +1,5 @@
 import {poplogin} from './navbar.js'
 
-document.getElementById("bottom-menu").innerHTML = footer()
-document.getElementById("navbar").innerHTML = navbar();
-
 document.getElementById("newFun").addEventListener("click", newFun)
 
 function newFun(){
