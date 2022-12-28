@@ -4,7 +4,7 @@ Hello everyone, this is a Readme for my construct week project that has been com
 
 ### live link: https://beamish-salamander-14c16f.netlify.app/
 
-<img src="https://cdn-images-1.medium.com/max/800/1*ytRsXnjUIdbvycyeZZg6hA.png">
+<img src="https://www.kindmeal.my/images/logo-kindmeal.png">
 
 ## Installing and Running
 > Executing the commands mentioned below one by one in your command line will help in making this web app, up and running on your system in the development mode.
@@ -38,38 +38,49 @@ Glimpse and Screenshots of my cloned website:
 
 ## 🅐 Navbar:
 
-- This is the Navbar of our website. Clicking on Login or Signup on the Navbar will show respective Page.
+- This is the Navbar of our website. Clicking on Login or Signup on the Navbar will show the respective Page.
 
-<img src="https://cdn-images-1.medium.com/max/800/1*HXsiOyJcmr5jaO-cTDluDw.png">
+<img src="https://miro.medium.com/max/1400/1*EulC212JRKeioIZ6QiylJQ.webp">
+
+- This is the Navbar when a user is logged in to our website.
+
+<img src="https://miro.medium.com/max/1400/1*o6IcC36aEo63Yxnlr4sSvg.webp">
 
 ## 🅑 Home Page:
 
-- The images on the home page are linked to all Pages. Hence clicking on it will ensure successful redirection to the next Page.
+- apart from the design of the homepage, I have implemented a slider type of thing where the trending restaurant is shown.
 
-- We also have a feature like Slideshows of food Images with Some Special Discounts and Recent Facebook posts by KindMeal.my, Yummylicious Moments, Discover Restaurants, etc.
+<img src="https://miro.medium.com/max/720/1*Tjz6n-khjnAXnrkDJg04ow.webp">
 
-- Content page with KindMeal.my official social media link, contacts, policies, information, account, and address.
+## 🅒 Footer bar:
 
-<img src="https://cdn-images-1.medium.com/max/800/1*un7z5ZxlNWGtW2kswGoUMw.png">
+- Here we have a footer of our website where users can go on different pages and social media.
 
-## Footer bar:
-- Here we have functions such as KindMeal.my official social media link, contacts, policies, and information. account, and address.
+<img src="https://miro.medium.com/max/720/1*BCLNQYNw_ll7_Y6nQwsKlQ.webp">
 
-- KindMeal.my official social media link, contacts, policies, and information. account, and address.
+## 🅓Login and Signup:
 
-<img src="https://cdn-images-1.medium.com/max/800/1*fXRHDrRGMRxK98erX4DWOQ.png">
+- Here we have a Modal Function on the Navbar when users click on signup or login they get a popup on the screen.
+- If the user is registered with the website, only then he/she can log in with their respective email id & password. After successful login, the user is redirected to his/her home page. Visible user name in user navbar section after login.
 
-## 🅒 Signup:
+<img src="https://miro.medium.com/max/720/1*H70D4-zQ_VJVm_Eqfem4NA.webp">
 
-- Here we have a Modal Function on the landing page when users click on signup they get a popup on the screen click on Foodlover they redirect to a separate page for signing up, if someone is not registered with the website he/she can either register by filling in the respective details or he/she can also log in with the page by clicking Email Button it will also get a popup of login.
+- Click on signup they redirect to a separate page for signing up, if someone is not registered with the website he/she can either register by filling in the respective details.
 
-<img src="https://cdn-images-1.medium.com/max/800/1*TOBt6eKQAo2ZaAkJiOt-zw.png">
+<img src="https://miro.medium.com/max/720/1*xiv4ZhAEEmLf8GBBRHvlXA.webp">
 
-<img src="https://cdn-images-1.medium.com/max/800/1*rPW0VnC4BNb-svfuZQ23iA.png">
+<img src="https://miro.medium.com/max/720/1*gCDxr50merhfm4lJxiSPUA.webp">
 
-## 🅓Login page:
+<img src="https://miro.medium.com/max/720/1*AfFtgeElPgzC62wr0X361g.webp">
 
-- If the user is registered with the website, only then he/she can log in with their respective email id & password. After successful login, the user is redirected to his/her home page. Visible user name in user profile section after login.
+## 🅔 Product Page
 
-<img src="https://cdn-images-1.medium.com/max/800/1*9bhjTNkZc_JNt6hNmuBc9Q.png">
+- This is the Product page of our website, here users can redeem/generate coupon codes.
+- Users must be logged in on our website for able to redeem the unique coupon code.
+
+<img src="https://miro.medium.com/max/720/1*KfsW8AN0Eg_Ve4OuG63ArQ.webp">
+
+<img src="https://miro.medium.com/max/720/1*PKo-9UoGlINZs4aZDGi1MA.webp">
+
+<img src="https://miro.medium.com/max/720/1*Rg_IJIzYnruLoFj2NI68fA.webp">
 
