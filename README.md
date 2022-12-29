@@ -15,7 +15,8 @@ Hello everyone, this is a Readme for my construct week project that has been com
 > git clone https://github.com/chetandabli/dear-ink-638.git
 > cd ./dear-ink-638
 > open with live server
-> After entering the commands mentioned above, open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+
+After entering the commands mentioned above, open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
 
 ## Tech-Stack:
 
