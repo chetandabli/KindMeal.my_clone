@@ -2,7 +2,7 @@
 
 Hello everyone, This is a Readme for my construct week project that has been completed successfully within the duration of 5 days. It was a solo project. I've made the clone website of kindmeal.my . I've created Home page , Signup page , Login page and Kindmeal products page.
 
-### live link: https://beamish-salamander-14c16f.netlify.app/
+### live link: https://beamish-salamander-14c16f.netlify.app
 
 ##### blog link: https://medium.com/@chetandabli/kindmeal-my-clone-solo-project-e357999ea94d
 
