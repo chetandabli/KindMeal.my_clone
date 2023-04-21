@@ -20,11 +20,11 @@ After entering the commands mentioned above, open [http://localhost:3000](http:/
 
 ## Tech-Stack:
 
-    a.HTML (structuring)
+    a.HTML
 
-    b.CSS (styling)
+    b.CSS
 
-    c.Javascript (functionality)
+    c.Javascript
     
 # Features
 
