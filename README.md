@@ -12,8 +12,8 @@ Hello everyone, This is a Readme for my construct week project that has been com
 > Executing the commands mentioned below one by one in your command line will help in making this web app, up and running on your system in the development mode.
 > 
 > ```bash
-> git clone https://github.com/chetandabli/dear-ink-638.git
-> cd ./dear-ink-638
+> git clone https://github.com/chetandabli/KindMeal.my_clone.git
+> cd ./KindMeal.my_clone
 > open with live server
 
 After entering the commands mentioned above, open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
