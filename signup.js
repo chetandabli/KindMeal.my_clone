@@ -176,3 +176,5 @@ function signUpFun(event){
 //     // loggedtable = table;
 
 // }
+
+console.clear()
